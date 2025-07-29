@@ -35,3 +35,5 @@ Purpose & Impact
 
 This application helps reduce food wastage by alerting users to items nearing expiry and providing recipes to utilize them effectively. It demonstrates full-stack web development skills, data-driven decision-making, and user interactivity, making it a resume-worthy Data Science project.
 
+![Image](https://github.com/user-attachments/assets/06af8390-e8c0-4c99-8811-a5e668547603)
+![Image](https://github.com/user-attachments/assets/b9532128-101c-49ed-a7e6-09278634f7db)
