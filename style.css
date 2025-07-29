@@ -1,0 +1,150 @@
+/* ===== Homepage Styles ===== */
+/* ===== General Page Styles ===== */
+body.homepage {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8dc; /* Creamy butterscotch background */
+    background-image: url("../static/backimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px auto;  /* Shrinks image to 400px wide */
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main central panel */
+.main-panel {
+    background: rgba(255, 248, 220, 0.85);
+    padding: 70px;
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    min-height: 400px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading (fixed so it won't float weirdly) */
+h1.page-title {
+    font-size: 2.5rem;
+    color: #5a3e2b;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    background: rgba(255, 248, 220, 0.9);
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Button styles */
+.button-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn.large {
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ffcc80, #ffb74d);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn.large:hover {
+    transform: scale(1.07);
+    background: linear-gradient(135deg, #ffe0b2, #ffcc80);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== Login Page ===== */
+body.login-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fff8dc url('bimage.jpg') no-repeat center;
+    background-size: 400px auto;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-panel {
+    background: rgba(255, 248, 220, 0.92);
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    width: 450px;
+    min-height: 300px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-panel h2 {
+    color: #8B4513;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-panel input[type="text"],
+.login-panel input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-panel button {
+    padding: 15px 25px;
+    background: #F4A460;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.login-panel button:hover {
+    background: #D2691E;
+    transform: scale(1.05);
+}
+
+/* ===== Table Row Colors (Inventory) ===== */
+/* Light red for items expiring soon (0–3 days) */
+table.dataTable tbody tr.expiring-item td {
+    background-color: #ffcccc !important;  /* Light red */
+    color: #a30000 !important;
+    font-weight: bold;
+}
+
+/* Dark gray for already expired items */
+table.dataTable tbody tr.expired-item td {
+    background-color: #555555 !important;  /* Dark gray */
+    color: #ffffff !important;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+/* Hover effects */
+table.dataTable tbody tr.expiring-item:hover td {
+    background-color: #ff9999 !important;
+}
+
+table.dataTable tbody tr.expired-item:hover td {
+    background-color: #333333 !important;
+}

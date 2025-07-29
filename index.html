@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Food Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('{{ url_for("static", filename="backimage.jpg") }}') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .panel {
+            background: rgba(255, 248, 220, 0.9); /* Creamy butterscotch */
+            padding: 70px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 500px;
+        }
+        h1 {
+            color: #8B4513; /* Chocolate text */
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .btn {
+            display: block;
+            margin: 15px auto;
+            padding: 15px 25px;
+            background: #F4A460; /* Sandy brown (butterscotch) */
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #D2691E; /* Darker shade */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h1>Welcome to Smart Food Tracker</h1>
+        <a href="/user_login" class="btn">Login as User</a>
+        <a href="/admin_login" class="btn">Login as Admin</a>
+        <a href="/inventory" class="btn">View Inventory</a>
+    </div>
+</body>
+</html>
